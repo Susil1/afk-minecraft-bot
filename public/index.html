@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AFK Bot Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Bot Dashboard</h1>
+
+  <button onclick="toggleSneak()">Toggle Sneak</button>
+  <button onclick="move('forward')">Move Forward</button>
+  <button onclick="move('back')">Move Back</button>
+  <button onclick="move('left')">Move Left</button>
+  <button onclick="move('right')">Move Right</button>
+  <button onclick="respawn()">Respawn</button>
+
+  <h3>Send Chat</h3>
+  <input type="text" id="chatInput" placeholder="Type message..." />
+  <button onclick="sendChat()">Send</button>
+
+  <h3>Live Chat</h3>
+  <div id="chatBox" style="max-height:200px; overflow:auto; border:1px solid gray;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
